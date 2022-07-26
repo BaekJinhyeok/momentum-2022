@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+}
+
+#clock {
+  transition: all 1s ease-in-out;
+}

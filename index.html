@@ -5,37 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edgt" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Momentum</title>
+    <title>Momentum - Copy</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log in</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <header class="header">
+      <div class="header-left">
+        <div class="header-left__links">
+          <input id="links-btn" type="checkbox" />
+          <label for="links-btn" onclick="">Links</label>
+          <ul class="links-menu">
+            <li><a href="https://www.google.co.kr/"><i class="fa-brands fa-google"></i></a></li></li>
+            <li><a href="https://www.youtube.co.kr/"><i class="fa-brands fa-youtube"></i></a></li></li>
+          </ul>
+        </div>
+        <div class="header-left__search">
+          <span>인풋 서치바, 검색 엔진 스위치</span>
+        </div>
+      </div>
+      <div class="header-center"></div>
+      <div class="header-right">
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="clcok-form">
+      <h2 id="clock">00:00:00</h2>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+
+    <main class="user">
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+    </main>
+
+    <div class="todo">
+      <span>오늘 할 일</span>
+      <form id="todo-form">
+        <input type="text" />
+      </form>
+      <div class="todo-list">
+        <ul id="todo-append"></ul>
+      </div>
     </div>
+
+    <div class="bottom-row">
+      <div class="bottom-row__setting"></div>
+      <div id="quote" class="bottom-row__quote">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="bottom-row__todo"></div>
+    </div>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fc872846c0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

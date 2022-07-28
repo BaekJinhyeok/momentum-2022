@@ -1,7 +1,8 @@
-.hidden {
-  display: none;
-}
+/* component */
+@import "reset.css";
 
-#clock {
-  transition: all 1s ease-in-out;
-}
+/* component */
+@import "components/clickbox.css";
+
+/* screen */
+@import "screen/home.css";

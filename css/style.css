@@ -1,8 +1,5 @@
 /* component */
 @import "reset.css";
 
-/* component */
-@import "components/clickbox.css";
-
 /* screen */
 @import "screen/home.css";
